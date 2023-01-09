@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&family=Reenie+Beanie&display=swap");
+
+.Donations-DApp {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  color: indigo;
+}
+
+.DonationsAppContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.CharityItem {
+  border: 3px solid indigo;
+  background: white;
+  cursor: pointer;
+  border-radius: 10px;
+  height: auto;
+  width: 600px;
+  padding: 10px;
+  color: indigo;
+  box-shadow: 2px 4px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.CharityItem:hover {
+  background: floralwhite;
+}
+.CharityItem[data-selected="true"] {
+  background: #ffeb3b;
+}
+
+.donations-button {
+  background-color: indigo;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 2px 4px #888888;
+  margin: 20px;
+}
+
+#charity {
+  background-color: #ffeb3b;
+  color: indigo;
+}
+
+#charity[data-issignedin="false"] {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.donations-button[data-loading="true"] {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.donations-button:hover {
+  background-color: #3b0066;
+  box-shadow: 1px 2px #888888;
+}
